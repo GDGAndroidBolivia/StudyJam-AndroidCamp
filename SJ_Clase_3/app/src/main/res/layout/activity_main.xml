@@ -15,40 +15,52 @@
         android:textColor="@android:color/black"
         android:textSize="25sp" />
 
- <EditText
-     android:layout_marginTop="20dp"
-     android:layout_width="match_parent"
-     android:layout_height="wrap_content"
-     android:hint="Quiero mi hamburguesa de..."/>
-    <CheckBox
-        android:layout_marginTop="20dp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Mayonesa"/>
-    <CheckBox
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Mostaza"/>
-    <CheckBox
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Ketchup"/>
     <EditText
-        android:layout_marginTop="20dp"
+        android:id="@+id/et_meat"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Algo mas?"
-        />
+        android:layout_marginTop="20dp"
+        android:hint="Quiero mi hamburguesa de..." />
+
+    <CheckBox
+        android:id="@+id/c_mayo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Mayonesa" />
+
+    <CheckBox
+        android:id="@+id/c_mos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mostaza" />
+
+    <CheckBox
+        android:id="@+id/c_ket"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ketchup" />
+
+    <EditText
+        android:id="@+id/et_extras"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:hint="Algo mas?" />
 
     <Button
+        android:id="@+id/btn_pedir_app"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="bottom"
         android:layout_marginTop="100dp"
         android:backgroundTint="@color/colorPrimaryDark"
+        android:onClick="pedirPorApp"
         android:text="Pedir por app"
         android:textColor="@android:color/white" />
+
     <Button
+        android:id="@+id/btn_pedir_email"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="bottom"

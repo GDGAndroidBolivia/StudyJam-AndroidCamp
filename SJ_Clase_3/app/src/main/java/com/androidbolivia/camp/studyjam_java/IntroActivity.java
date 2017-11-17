@@ -26,6 +26,9 @@ public class IntroActivity extends AppCompatActivity {
 
             @Override
             public void onAnimationEnd(Animation animation) {
+                Intent i=new Intent(getApplicationContext(),MainActivity.class);
+                startActivity(i);
+                finish();
             }
 
             @Override
